@@ -1,0 +1,10 @@
+{% block leafletmap_widget %}
+    {% set attr = attr|merge({'class': attr.class|default('') ~ ' form-control'}) %}
+    <div data-id="map" {{ block('widget_attributes') }} style="width: 100%; height: 400px;"></div>
+    <p><span data-id="coordinates">&nbsp;</span></p>
+    {#<button id="getCoords" type="button">Coordinate Marker?</button>#}
+    {#<p>Valore passato dalla classe di comuni: {{ value }}</p>#}
+    {#<p>Variabile passata dalla classe di definizione del field type: {{ ibPass }}</p>#}
+    {#<textarea {{ block('widget_attributes') }}>{{ value }}</textarea>#}
+    {#<input {{ block('widget_attributes') }} value="{{ value }}"/>#}
+{% endblock %}

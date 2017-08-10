@@ -1,0 +1,4 @@
+#twig:
+#  form:
+#    resources:
+#      - 'BfaGeoLocationBundle:Default:leafletmap.html.twig'
